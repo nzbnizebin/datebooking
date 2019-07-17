@@ -30,3 +30,5 @@ build/
 
 # coverage report
 coverage
+
+server/dist
