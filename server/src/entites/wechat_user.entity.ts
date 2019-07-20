@@ -1,13 +1,13 @@
 
 import { Column, CreateDateColumn, Entity, PrimaryGeneratedColumn, UpdateDateColumn } from 'typeorm';
 
-@Entity()
+@Entity('wechat_user')
 export class WechatUser {
   @PrimaryGeneratedColumn()
   public id:number;
 
   @Column('number', { nullable: false })
-  public user_id:number;
+  public open_id:number;
 
   @Column('string', { nullable: true })
   public nickname:string;

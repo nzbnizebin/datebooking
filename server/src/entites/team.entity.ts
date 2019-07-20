@@ -1,7 +1,7 @@
 
 import { Column, CreateDateColumn, Entity, PrimaryGeneratedColumn, Timestamp, UpdateDateColumn } from 'typeorm';
 
-@Entity()
+@Entity('team')
 export class Team {
   @PrimaryGeneratedColumn()
   public id:number;

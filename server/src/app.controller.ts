@@ -2,7 +2,9 @@ import { Body, Controller, Get, Post } from '@nestjs/common';
 import { ApiImplicitBody, ApiImplicitParam, ApiOperation, ApiResponse, ApiUseTags } from '@nestjs/swagger';
 import { AppService } from './app.service';
 import { User } from './document/user';
+import { ITeam } from './interfaces/team';
 import { IUser } from './interfaces/user_wechat';
+
 @ApiUseTags('User')
 
 @Controller()
@@ -20,5 +22,10 @@ export class AppController {
   @ApiImplicitBody({ name: 'company', required: true, type: User })
   public addUser(@Body() user:IUser) : void {
     // this.appService.create()
+  }
+
+  public async addTeam(@Body() team:ITeam) : Promise<number> {
+    //
+    return 1;
   }
 }

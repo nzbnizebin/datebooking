@@ -1,6 +1,6 @@
 export interface IUser {
     nickname:string;
     headimgurl:string;
-    openid:string;
+    openid:number;
     sex:number;
 }
