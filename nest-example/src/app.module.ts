@@ -4,7 +4,7 @@ import { TeamModule } from './team/team.module';
 
 @Module({
   imports: [
-    MongooseModule.forRoot('mongodb://mongoroot:mongopwd@123.207.9.26:21087/nest'),
+    MongooseModule.forRoot('mongodb://mongoroot:mongopwd@127.0.0.1:21087/nest'),
     TeamModule,
   ],
 })
